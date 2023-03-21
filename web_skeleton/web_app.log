@@ -1,0 +1,32 @@
+{"level":"DEBUG","time":"2023-03-21T18:45:11.937+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:45:11.945+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial root:6nv2lxTHDVuQUQN9&tcp: unknown network root:6nv2lxTHDVuQUQN9&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:46:32.167+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:46:32.176+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial root:6nv2lxTHDVuQUQN9&tcp: unknown network root:6nv2lxTHDVuQUQN9&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:51:16.993+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:51:17.001+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial api:6nv2lxTHDVuQUQN9&tcp: unknown network api:6nv2lxTHDVuQUQN9&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:51:20.812+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:51:20.820+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial api:6nv2lxTHDVuQUQN9&tcp: unknown network api:6nv2lxTHDVuQUQN9&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:52:38.359+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:52:38.368+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial root:12333333333&tcp: unknown network root:12333333333&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:54:27.912+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"DEBUG","time":"2023-03-21T18:54:57.698+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T18:55:02.838+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T18:55:02.838+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-21T18:55:19.512+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"DEBUG","time":"2023-03-21T18:55:33.313+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T18:55:51.629+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T18:55:51.629+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-21T18:55:54.792+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T18:56:22.004+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T18:56:22.004+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-21T18:56:24.789+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T18:56:33.011+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T18:56:33.011+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-21T18:56:35.404+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-03-21T18:56:35.420+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial api:6nv2lxTHDVuQUQN9&tcp: unknown network api:6nv2lxTHDVuQUQN9&tcp"}
+{"level":"DEBUG","time":"2023-03-21T18:56:51.291+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T19:06:08.020+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T19:06:08.020+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-21T19:06:14.229+0800","caller":"web_skeleton/main.go:32","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-21T19:06:15.803+0800","caller":"web_skeleton/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-21T19:06:15.803+0800","caller":"web_skeleton/main.go:79","msg":"Server exiting"}
