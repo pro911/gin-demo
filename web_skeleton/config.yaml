@@ -1,0 +1,25 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  port: 8001
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "6nv2lxTHDVuQUQN9"
+  dbname: "api"
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: "6nv2lxTHDVuQUQN9"
+  db: 12
+  pool_size: 100 #连接池大小
+  

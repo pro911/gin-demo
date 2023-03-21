@@ -1,0 +1,10 @@
+1.6792392743794017e+09	info	Success...	{"statusCode": "200 OK", "url": "https://www.baidu.com"}
+1.6792392743794816e+09	info	Success...{statusCode 15 0 200 OK <nil>} {url 15 0 https://www.baidu.com <nil>}
+1.6792394122288635e+09	info	Success...	{"statusCode": "200 OK", "url": "https://www.baidu.com"}
+1.679239412229331e+09	info	Success...{statusCode 15 0 200 OK <nil>} {url 15 0 https://www.baidu.com <nil>}
+1.6792396685666294e+09	info	zap_demo/main.go:56	Success...	{"statusCode": "200 OK", "url": "https://www.baidu.com"}
+1.6792396685669603e+09	info	zap_demo/main.go:57	Success...{statusCode 15 0 200 OK <nil>} {url 15 0 https://www.baidu.com <nil>}
+2023-03-19T23:30:43.074+0800	INFO	zap_demo/main.go:46	Success...	{"statusCode": "200 OK", "url": "https://www.baidu.com"}
+2023-03-19T23:30:43.097+0800	INFO	zap_demo/main.go:47	Success...{statusCode 15 0 200 OK <nil>} {url 15 0 https://www.baidu.com <nil>}
+2023-03-19T23:31:58.634+0800	INFO	zap_demo/main.go:56	Success...	{"statusCode": "200 OK", "url": "https://www.baidu.com"}
+2023-03-19T23:31:58.655+0800	INFO	zap_demo/main.go:56	Success...{statusCode 15 0 200 OK <nil>} {url 15 0 https://www.baidu.com <nil>}
