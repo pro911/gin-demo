@@ -1,0 +1,40 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  version: "v1.0"
+  start_time: "2020-07-01"
+  machine_id: 1
+
+http_server:
+  port: 8081
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "api"
+  password: "6nv2lxTHDVuQUQN9"
+  db_name: "api"
+  max_open_conns: 20
+  max_idle_conns: 10
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "6nv2lxTHDVuQUQN9"
+  db_name: 12
+  pool_size: 100 #连接池大小
+
+mongo:
+  host: "127.0.0.1"
+  port: 27017
+  user: "admin"
+  password: "6nv2lxTHDVuQUQN9"
+  db_name: "api"
+  auth_source: "admin"

@@ -1,0 +1,43 @@
+{"level":"DEBUG","time":"2023-03-22T10:32:24.648+0800","caller":"bluebell/main.go:31","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-22T10:32:44.990+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:44.991+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:32:47.816+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:47.816+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:32:48.508+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:48.508+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:32:49.107+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:49.107+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:32:49.655+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:49.655+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:32:50.246+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:32:50.246+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:17.233+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:17.233+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:18.946+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:18.946+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:19.656+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:19.656+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:22.088+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:22.088+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:22.744+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:22.744+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:27.547+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:27.547+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:28.164+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:28.165+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:28.620+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:28.620+0800","caller":"middlewares/logger.go:26","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:51.370+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:51.370+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:52.990+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:52.990+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:34:53.500+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:34:53.501+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:35:02.657+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:35:02.657+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:35:03.742+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:35:03.743+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T10:35:06.974+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-22T10:35:06.974+0800","caller":"middlewares/logger.go:26","msg":"/version","status":200,"method":"POST","path":"/version","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-22T12:02:42.749+0800","caller":"bluebell/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-22T12:02:42.749+0800","caller":"bluebell/main.go:80","msg":"Server exiting"}
