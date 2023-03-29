@@ -31,11 +31,13 @@ type HttpServer struct {
 }
 
 type LogConfig struct {
-	Level      string `mapstructure:"level"`
-	Filename   string `mapstructure:"filename"`
-	MaxSize    int    `mapstructure:"max_size"`
-	MaxAge     int    `mapstructure:"max_age"`
-	MaxBackups int    `mapstructure:"max_backups"`
+	Level       string `mapstructure:"level"`
+	Filename    string `mapstructure:"filename"`
+	ErrFilename string `mapstructure:"err_filename"`
+	MaxSize     int    `mapstructure:"max_size"`
+	MaxAge      int    `mapstructure:"max_age"`
+	MaxBackups  int    `mapstructure:"max_backups"`
+	CloseStdout bool   `mapstructure:"close_stdout"`
 }
 
 type MySQLConfig struct {
@@ -65,10 +67,16 @@ type MongoConfig struct {
 	AuthSource string `mapstructure:"auth_source"`
 }
 
-func Init() (err error) {
-	viper.SetConfigName("config")               //指定配置文件名称 (不需要带后缀)
-	viper.SetConfigType("yaml")                 //指定配置文件后缀
-	viper.AddConfigPath("./")                   //指定查找配置文件的路径 (这里使用相对路径)
+func Init(configFile string) (err error) {
+
+	if len(configFile) > 0 {
+		viper.SetConfigFile(configFile)
+	} else {
+		viper.SetConfigName("config") //指定配置文件名称 (不需要带后缀)
+		viper.SetConfigType("yaml")   //指定配置文件后缀
+		viper.AddConfigPath("./")     //指定查找配置文件的路径 (这里使用相对路径)
+	}
+
 	if err = viper.ReadInConfig(); err != nil { //读取配置信息
 		//读取配置信息失败
 		fmt.Printf("viper.ReadInConfig() failed,err:%v\n", err)

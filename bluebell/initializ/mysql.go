@@ -1,4 +1,4 @@
-package mysql
+package initializ
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 
 var db *sqlx.DB
 
-func Init(cfg *settings.MySQLConfig) (err error) {
+func MySQL(cfg *settings.MySQLConfig) (err error) {
 	//dsn := "root:6nv2lxTHDVuQUQN9@tcp(127.0.0.1:3306)/api"
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True",
 		cfg.User,
@@ -30,10 +30,10 @@ func Init(cfg *settings.MySQLConfig) (err error) {
 	return
 }
 
-// Close 将关闭数据库并阻止启动新查询。关闭，然后等待服务器上已开始处理的所有查询完成。
+// MySQLClose 将关闭数据库并阻止启动新查询。关闭，然后等待服务器上已开始处理的所有查询完成。
 //
 //	 关闭数据库的情况很少见，
 //		因为数据库句柄是长期存在的，并且在许多 goroutines 之间共享
-func Close() {
+func MySQLClose() {
 	_ = db.Close()
 }

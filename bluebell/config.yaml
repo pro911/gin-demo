@@ -2,7 +2,7 @@ app:
   name: "web_app"
   mode: "dev"
   version: "v1.0"
-  start_time: "2020-07-01"
+  start_time: "2023-03-23"
   machine_id: 1
 
 http_server:
@@ -10,10 +10,12 @@ http_server:
 
 log:
   level: "debug"
-  filename: "web_app.log"
+  filename: "app.log"
+  err_filename: "err.log"
   max_size: 200
   max_age: 30
   max_backups: 7
+  close_stdout: true
 
 mysql:
   host: "127.0.0.1"

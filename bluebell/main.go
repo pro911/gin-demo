@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
-	"github.com/pro911/gin-demo/bluebell/dao/mysql"
-	"github.com/pro911/gin-demo/bluebell/dao/redis"
+	"github.com/pro911/gin-demo/bluebell/initializ"
 	"github.com/pro911/gin-demo/bluebell/logger"
 	"github.com/pro911/gin-demo/bluebell/pkg/snowflake"
 	"github.com/pro911/gin-demo/bluebell/routers"
@@ -17,9 +17,17 @@ import (
 	"time"
 )
 
+var configFile string
+
 func main() {
+
+	flag.StringVar(&configFile, "f", "", "传入配置文件路径")
+	//解析命令行参数
+	flag.Parse()
+
+	fmt.Printf("configFile:%v\n", configFile)
 	//1.加载配置
-	if err := settings.Init(); err != nil {
+	if err := settings.Init(configFile); err != nil {
 		fmt.Printf("init settings failed,err:%v\n", err)
 		return
 	}
@@ -32,18 +40,18 @@ func main() {
 	zap.L().Debug("logger init success...")
 
 	//3.初始化MySQL连接
-	if err := mysql.Init(settings.Conf.MySQLConfig); err != nil {
+	if err := initializ.MySQL(settings.Conf.MySQLConfig); err != nil {
 		fmt.Printf("init MySQL failed,err:%v\n", err)
 		return
 	}
-	defer mysql.Close() //当程序停止时关闭mysql资源
+	defer initializ.MySQLClose() //当程序停止时关闭mysql资源
 
 	//4.初始化Redis连接
-	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
+	if err := initializ.Redis(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("init Redis failed,err:%v\n", err)
 		return
 	}
-	defer redis.Close()
+	defer initializ.RedisClose()
 
 	//初始化雪花算法
 	if err := snowflake.Init(settings.Conf.AppConfig.StartTime, settings.Conf.AppConfig.MachineID); err != nil {

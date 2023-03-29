@@ -5,6 +5,8 @@ import (
 	"github.com/pro911/gin-demo/bluebell/settings"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	"io"
+	"os"
 )
 
 func getEncoder() zapcore.Encoder {
@@ -17,7 +19,9 @@ func getEncoder() zapcore.Encoder {
 	return zapcore.NewJSONEncoder(encoderConfig)
 }
 
-func getLogWriter(filename string, maxSize, maxBackup, maxAge int) zapcore.WriteSyncer {
+func getLogWriter(filename string, maxSize, maxBackup, maxAge int, closeStdout bool) zapcore.WriteSyncer {
+	// 利用io.MultiWriter支持文件和终端两个输出目标
+	var ws io.Writer
 
 	//日志切割
 	lumberjackLogger := &lumberjack.Logger{
@@ -28,7 +32,11 @@ func getLogWriter(filename string, maxSize, maxBackup, maxAge int) zapcore.Write
 		LocalTime:  false,
 		Compress:   false,
 	}
-	return zapcore.AddSync(lumberjackLogger)
+	ws = lumberjackLogger
+	if closeStdout {
+		ws = io.MultiWriter(lumberjackLogger, os.Stdout)
+	}
+	return zapcore.AddSync(ws)
 }
 
 func Init(cfg *settings.LogConfig) (err error) {
@@ -39,15 +47,28 @@ func Init(cfg *settings.LogConfig) (err error) {
 		cfg.MaxSize,
 		cfg.MaxBackups,
 		cfg.MaxAge,
+		cfg.CloseStdout,
+	)
+
+	//创建一个错误的日志收集
+	writerSyncerErr := getLogWriter(
+		cfg.ErrFilename,
+		cfg.MaxSize,
+		cfg.MaxBackups,
+		cfg.MaxAge,
+		cfg.CloseStdout,
 	)
 
 	var l = new(zapcore.Level)
-	err = l.UnmarshalText([]byte(cfg.Level))
-	if err != nil {
+	if err = l.UnmarshalText([]byte(cfg.Level)); err != nil {
 		return err
 	}
+
 	core := zapcore.NewCore(encoder, writerSyncer, l)
-	lg := zap.New(core, zap.AddCaller())
+	coreErr := zapcore.NewCore(encoder, writerSyncerErr, zapcore.ErrorLevel)
+
+	//使用NewTee将多个文件合并到core
+	lg := zap.New(zapcore.NewTee(core, coreErr), zap.AddCaller())
 	//替换zap库中全局的logger
 	zap.ReplaceGlobals(lg)
 	return

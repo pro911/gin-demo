@@ -3,6 +3,7 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/pro911/gin-demo/bluebell/controllers"
 	"github.com/pro911/gin-demo/bluebell/middlewares"
 	"github.com/pro911/gin-demo/bluebell/settings"
 	"net/http"
@@ -13,6 +14,8 @@ func Setup() *gin.Engine {
 	r := gin.New()
 
 	r.Use(middlewares.GinLogger(), middlewares.GinRecovery(true))
+
+	r.POST("/sign_up", controllers.SignUpHandler)
 
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, fmt.Sprintf("ok:%v", time.Now().Unix()))

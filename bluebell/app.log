@@ -1,0 +1,17 @@
+{"level":"DEBUG","time":"2023-03-23T17:31:12.654+0800","caller":"bluebell/main.go:40","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-23T17:31:19.215+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-23T17:31:19.215+0800","caller":"middlewares/logger.go:26","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-23T17:39:49.777+0800","caller":"bluebell/main.go:87","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-23T17:39:49.778+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-23T17:39:52.787+0800","caller":"bluebell/main.go:40","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-23T17:40:47.726+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-23T17:40:47.726+0800","caller":"middlewares/logger.go:26","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-23T17:41:21.465+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-23T17:41:21.465+0800","caller":"middlewares/logger.go:26","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-23T17:41:24.262+0800","caller":"bluebell/main.go:87","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-23T17:41:24.262+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-03-23T17:41:27.330+0800","caller":"bluebell/main.go:40","msg":"logger init success..."}
+{"level":"INFO","time":"2023-03-23T17:41:32.798+0800","caller":"middlewares/logger.go:24","msg":"xxxxxxxxxxxxxxxxxx"}
+{"level":"INFO","time":"2023-03-23T17:41:32.798+0800","caller":"middlewares/logger.go:26","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":"0s"}
+{"level":"INFO","time":"2023-03-23T17:49:39.665+0800","caller":"bluebell/main.go:87","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-23T17:49:39.666+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
