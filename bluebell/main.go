@@ -51,6 +51,7 @@ func main() {
 		fmt.Printf("init Redis failed,err:%v\n", err)
 		return
 	}
+
 	defer initializ.RedisClose()
 
 	//初始化雪花算法
